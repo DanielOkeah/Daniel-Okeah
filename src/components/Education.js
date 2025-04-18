@@ -27,11 +27,13 @@ function Education() {
         <div className="row">
           {educationItems.map((item, index) => (
             <div className="col-md-4" key={index}>
-              <EducationItem
-                date={item.date}
-                degree={item.degree}
-                institution={item.institution}
-              />
+              <div className="experience-card">
+                <EducationItem
+                  date={item.date}
+                  degree={item.degree}
+                  institution={item.institution}
+                />
+              </div>
             </div>
           ))}
         </div>

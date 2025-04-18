@@ -36,7 +36,7 @@ function Experience() {
       ]
     },
     {
-      date: "January 2021 - December 2022",
+      date: "January 2022 - December 2022",
       company: "Orbus Healthcare Consulting",
       title: "Biomedical Systems Consultant",
       responsibilities: [
@@ -53,13 +53,14 @@ function Experience() {
       <div className="card-block">
         <h2>Experience</h2>
         {experiences.map((exp, index) => (
-          <WorkExperienceItem 
-            key={index} 
-            date={exp.date} 
-            company={exp.company} 
-            title={exp.title} 
-            responsibilities={exp.responsibilities} 
-          />
+          <div className="experience-card" key={index}>
+            <WorkExperienceItem 
+              date={exp.date} 
+              company={exp.company} 
+              title={exp.title} 
+              responsibilities={exp.responsibilities} 
+            />
+          </div>
         ))}
       </div>
     </div>
