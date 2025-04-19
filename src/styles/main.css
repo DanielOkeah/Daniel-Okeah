@@ -6037,3 +6037,40 @@ body.dark-mode .experience-card {
 }
 
 /* Add more overrides as needed for your UI */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+  }
+
+  .content-wrapper {
+    padding: 10px;
+  }
+
+  .footer-container {
+    padding: 15px;
+  }
+
+  .tabs-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tab-button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+  }
+
+  .tabs-content {
+    padding: 10px 0;
+  }
+}
