@@ -36,6 +36,16 @@ function SocialNetwork() {
               </a>
             </p>
           </div>
+          <div className="col-md-3">
+            <p className="social-buttons">
+              <a href="/src/CV - Daniel Okeah.pdf" download title="Download CV">
+                <span className="social-round-icon fa-icon">
+                  <i className="fa fa-file-pdf-o"></i>
+                </span>
+                Download CV
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </div>
