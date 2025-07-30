@@ -9,11 +9,6 @@ function Education() {
       institution: "HAW University of Applied Sciences"
     },
     {
-      date: "September 2022 - January 2023",
-      degree: "Master's Preparatory Course",
-      institution: "HAW University of Applied Sciences"
-    },
-    {
       date: "September 2018 - June 2022",
       degree: "Bachelor's Degree in Biomedical Engineering, Honors",
       institution: "Kharkiv National University of Radioelectronics"
