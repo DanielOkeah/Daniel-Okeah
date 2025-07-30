@@ -18,7 +18,7 @@ function Experience() {
     {
       date: "May 2023 - Present",
       company: "Olympus Europe SE & Co. KG",
-      title: "Service Engineer - Technical Service Product Management",
+      title: "Service Product Engineer - Technical Service Product Management",
       responsibilities: [
         "- Regular updates to Olympus products spare parts lists utilized by Field service engineers and technicians.",
         "- Service documentation and management of data modification notices(DMNs).",
