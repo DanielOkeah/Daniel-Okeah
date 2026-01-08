@@ -41,7 +41,8 @@ function App() {
           border: 'none',
           fontWeight: 600,
           cursor: 'pointer',
-          boxShadow: '0 2px 8px rgba(0,0,0,0.08)'
+          boxShadow: darkMode ? '0 2px 8px rgba(0,0,0,0.4)' : '0 2px 8px rgba(0,0,0,0.08)',
+          transition: 'all 0.3s ease'
         }}
         onClick={() => setDarkMode((d) => !d)}
         aria-label="Toggle dark mode"

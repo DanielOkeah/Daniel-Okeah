@@ -5960,16 +5960,20 @@ body {
 
 /* --- DARK MODE --- */
 body.dark-mode {
-  --primary: #26c6da;
-  --primary-dark: #0097a7;
-  --accent: #2196f3;
-  --accent-dark: #1769aa;
-  --background: #101c24;
-  --surface: #18232e;
-  --text: #e0f7fa;
+  /* Simpler, classic dark theme palette */
+  --primary: #90caf9;       /* light blue primary */
+  --primary-dark: #5ea0e6;
+  --accent: #03dac6;        /* subtle teal accent */
+  --accent-dark: #00c4ab;
+  /* background and surface typical of basic dark modes */
+  --background: #121212;
+  --surface: #1e1e1e;
+  /* high-contrast, but not pure white to reduce glare */
+  --text: #e6e6e6;
   --text-light: #ffffff;
-  --border: #22303a;
-  --gradient: linear-gradient(180deg, #101c24 0%, #1769aa 100%);
+  /* soft border so elements separate without harsh lines */
+  --border: rgba(255,255,255,0.06);
+  --gradient: linear-gradient(180deg, #121212 0%, #1e1e1e 100%);
   background-image: var(--gradient);
   background-color: var(--background);
   color: var(--text);
@@ -6034,6 +6038,77 @@ body.dark-mode .experience-card {
   background: var(--surface);
   color: var(--text);
   border: 1px solid var(--border);
+  /* subtle shadow for separation on dark backgrounds */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+/* Dark-mode specific link, button and icon contrast tweaks */
+body.dark-mode a {
+  color: var(--primary);
+}
+body.dark-mode a:focus,
+body.dark-mode a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+body.dark-mode .btn-primary {
+  background-image: linear-gradient(90deg, var(--primary) 0%, var(--accent) 100%);
+  color: var(--text-light);
+  border-color: transparent;
+}
+body.dark-mode .social-round-icon,
+body.dark-mode .fa-icon {
+  color: var(--text-light);
+  background: rgba(255,255,255,0.03);
+}
+
+/* Additional dark-mode overrides for comprehensive coverage */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: var(--text-light);
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: rgba(230, 230, 230, 0.5);
+}
+
+body.dark-mode .navbar,
+body.dark-mode nav {
+  background-color: var(--surface);
+  border-bottom-color: var(--border);
+}
+
+body.dark-mode .footer-container {
+  background-color: var(--surface);
+  color: var(--text);
+  border-top-color: var(--border);
+}
+
+body.dark-mode table {
+  color: var(--text);
+  border-color: var(--border);
+}
+
+body.dark-mode table th,
+body.dark-mode table td {
+  border-color: var(--border);
+}
+
+body.dark-mode .list-icons {
+  color: var(--text);
 }
 
 /* Add more overrides as needed for your UI */

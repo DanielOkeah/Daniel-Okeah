@@ -32,3 +32,17 @@
 .fade-tab.show {
   opacity: 1;
 }
+
+/* Dark mode overrides for tabs */
+body.dark-mode .tabs-header {
+  border-bottom-color: rgba(255, 255, 255, 0.06);
+}
+
+body.dark-mode .tab-button {
+  color: #e6e6e6;
+}
+
+body.dark-mode .tab-button.active {
+  border-bottom-color: #90caf9;
+  color: #90caf9;
+}
